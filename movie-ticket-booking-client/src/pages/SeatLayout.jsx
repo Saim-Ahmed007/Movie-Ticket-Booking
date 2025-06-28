@@ -42,7 +42,6 @@ const SeatLayout = () => {
     }
     navigate("/my-bookings")
   }
-  
 
   const renderSeats = (row, count = 9) => (
     <div key={row} className="flex gap-2 mt-2">
@@ -68,6 +67,7 @@ const SeatLayout = () => {
   useEffect(() => {
     getShow();
   }, [id]);
+
   return show ? (
     <div className="flex flex-col md:flex-row px-6 md:px-16 lg:px-40 py-30 md:pt-50 ">
       {/* available timings */}

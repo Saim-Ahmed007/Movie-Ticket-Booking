@@ -96,7 +96,7 @@ const AddShows = () => {
       <div className="mt-8">
         <label htmlFor="" className="block text-sm font-medium mb-2">Select Date and Time</label>
           <div className="inline-flex items-center gap-5 border border-gray-600 p-1 pl-3 rounded-lg">
-            <input type="datetime-local" value={dateTimeInput} min={0} onChange={(e)=> setDateTimeInput(e.target.value)} placeholder="Enter show price" className="outline-none rounded-md" />
+            <input type="datetime-local" value={dateTimeInput} min={0} onChange={(e)=> setDateTimeInput(e.target.value)} className="outline-none rounded-md" />
             <button onClick={handleDateTimeAdd} className="bg-[#F84565]/80 text-white px-3 py-2 text-sm rounded-lg hover:bg-[#F84565] cursor-pointer">Add Time</button>
           </div>
       </div>

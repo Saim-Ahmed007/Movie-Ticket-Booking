@@ -49,7 +49,7 @@ const DateSelect = ({ dateTime, id }) => {
         </div>
         <button
           onClick={onBookHandler}
-          className="bg-[#F84565] text-white px-8 py-2 mt-6 rounded hover:bg-[#F84565]/90 transition-all cursor-pointer "
+          className="bg-[#F84565] text-white px-8 py-2 mt-6 rounded hover:bg-[#F84565]/90 transition-all cursor-pointer"
         >
           Book Now
         </button>
