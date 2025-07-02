@@ -23,6 +23,7 @@ const Navbar = () => {
             <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/movies">Movies</Link>
             <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/">Theaters</Link>
             <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/">Releses</Link>
+            <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/admin">Dashboard</Link>
             {favouriteMovies.length > 0 && <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/favourite">Favourites</Link>}
            </div>
            <div className='flex items-center gap-8'>
