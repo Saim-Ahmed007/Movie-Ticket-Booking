@@ -5,6 +5,5 @@ export const dateFormat = (date) => {
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric'
-
     })
 }

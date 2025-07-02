@@ -1,7 +1,6 @@
 import { Inngest } from "inngest";
 import { User } from "../models/user.js";
 
-
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "movie-ticket-booking" });
 
@@ -50,10 +49,10 @@ const syncUserUpdation = inngest.createFunction(
          const userData = {
             _id: id,
             name: first_name + ' ' + last_name,
-            email: email_addresses[0],
+            email: email_addresses[0]?.email_address || "",
             image: image_url
         }
-        await User.findByIdAndUpdate(id, userData)
+        await User.findByIdAndUpdate(id, userData, { new: true, upsert: true })
          return { ok: true };
     }
 )
